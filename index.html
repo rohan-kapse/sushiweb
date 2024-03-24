@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- While modern browsers can often infer the type of resource based on the file extension, explicitly specifying the type attribute adds clarity and ensures consistent behavior across different browsers and scenarios. -->
+  <!-- even for SEO its better to specify accurate type -->
+  <link rel="icon" type="image/png" href="/sushi-9.png"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <title>Sushiweb</title>
+</head>
+<body>
+ <!-- Header Section -->
+   <header>
+    <!-- navbar -->
+    <nav class="header__nav">
+      <!-- title and logo -->
+      <div class="header__logo">
+        <h4>Sushiweb</h4>
+        <div class="header__logo-overlay"></div>
+      </div>
+      <!-- nav items -->
+      <ul class="header__menu">
+        <li>
+          <!--<a>, is used to create hyperlinks -->
+          <a href="#menu">Menu</a> 
+          <!-- directs to id of menu -->
+        </li>
+        <li>
+          <a href="#food">Food</a> 
+        </li>
+        <li>
+          <a href="#services">Services</a> 
+        </li>
+        <li>
+          <a href="#about-us">About Us</a> 
+        </li>
+        <!-- search -->
+        <li>
+          <img src="sushi_assets/assets/search.svg" alt="search"/>
+        </li>
+
+        <!-- mobile devices menu -->
+       <ul class="header__menu_mobile">
+          <li>
+            <img src="sushi_assets/assets/menu.svg"
+             alt =menu/>
+          </li>
+       </ul>
+      </ul>
+    </nav>
+   </header>
+   <section class="hero">
+      <div class="hero-image">
+        <img
+          src="sushi_assets/assets/sushi-1.png"
+          alt="sushi"
+        />
+        <h2>
+          日 <br />
+          本 <br />
+          食
+        </h2>
+        <div class="hero-image__overlay">
+
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-content-info">
+          <h1>Feel the taste of japanese food</h1>
+          <p>Feel the taste of the most 
+            popular Japanese food from 
+            anywhere and anytime.</p>
+            <div class="hero-content__buttons">
+               <button class="hero-content__order-button">Order Now</button>
+               <button class="hero-content__play-button">
+                <img src="sushi_assets/assets/play-circle.svg" alt="play"/>
+                How to Order
+               </button>
+            </div>
+        </div>
+        <div class="hero-content__testimonial">
+          <div class="hero-content__customer">
+          <h4>24<span>4k+</span></h4>
+          <p>Happy Customers</p>
+          </div>
+        <div class="hero-content__review">
+          <img src="sushi_assets/assets/user.png" alt="user"/>
+          <p>"This is the best Japanese food delivery service 
+            that we have ever seen."
+          </p>
+        </div>
+      </div>
+    </div>  
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- While modern browsers can often infer the type of resource based on the file extension, explicitly specifying the type attribute adds clarity and ensures consistent behavior across different browsers and scenarios. -->
+  <script src="/js/script.js" type="module"></script>
+<!-- //When a script is loaded with type="module", it tells the browser that the script should be treated as an ECMAScript module.  -->
+</body>
+</html>

@@ -1,0 +1,75 @@
+.header__nav{
+    display: flex;
+ /* clips any content that extends beyond the container's dimensions and hides it from view.  */
+/* prevents the overflow content from being visible or overlapping other elements on the page */
+    overflow: hidden;
+}
+
+.header__logo{
+/* tells the flex item to expand and fill up any remaining space in the flex container after accounting for the sizes of other flex items. */
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20px;
+}
+
+.header__logo-overlay{
+    position: absolute;
+    /* inset or shorthand for top: 0, right: 0, bottom: 0, left: 0 */
+    inset: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+.header__logo h4{
+    padding-left: 30px;
+
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: var(--playfair-display);
+  color: #fff;
+  opacity: 0.8;
+}
+
+.header__menu,
+.header__menu-mobile{
+    padding: 20px;
+    flex: 1.235;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 64px;
+  
+    list-style: none;
+}
+
+.header__menu li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* When applied to an element, it converts all the letters 
+    in the text content of that element to uppercase letters. */
+    text-transform: uppercase;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    cursor: pointer;
+  }
+
+  .header__menu li img {
+    width: 24px;
+    height: 24px;
+    /* ensures that the entire content is visible inside its container without distortion, 
+    while also making sure it doesn't overflow or get cropped. 
+    Instead, it's resized to fit within the container's bounds 
+    while maintaining its original aspect ratio. */
+    object-fit: contain;
+  }
+  
+  .header__menu-mobile {
+    display: none;
+    gap: 20px;
+  
+    position: relative;
+  }

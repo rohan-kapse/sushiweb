@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+
+
+/* css file imports */
+@import url("sections/header.css");
+@import url("sections/hero.css");
+
+/* CSS variables */
+:root{
+     /* fonts */
+    --playfair-display: "Playfair Display", serif;
+    --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+
+    --primary-color: #b1454a;
+    --secondary-color: #121212;
+
+    /* some instances of black color */
+    --black-200: #020202;
+    --black-300: #333333;
+    --black-500: #555555;
+    --gray-100: #888888;
+
+    /* some instances of white color */
+    --color-white: #fff;
+    --color-creamson: #fff0de;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    /*  This rule sets the maximum width of the <body> element to 1280 pixels. 
+    This means that the body content will not expand beyond this width, 
+    even if the viewport or container is wider. */
+    max-width: 1280px;
+    /* This property sets the margins of an element. 
+    In this case, it's shorthand for setting the top and bottom margins
+    to 0 and the left and right margins to the value auto. */
+    /* Setting 0 for the top and bottom margins means 
+    there will be no margin space above or below the element. */
+    /* The left and right margins are set to auto, 
+    instructing the browser to automatically calculate 
+    and distribute the remaining horizontal space evenly 
+    on both sides of the element, thus centering it horizontally 
+    within its containing block. */
+    margin: 0 auto;
+    background-color: var(--color-creamson);
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
